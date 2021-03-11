@@ -1,17 +1,32 @@
 body{
     margin: 0px;
     padding: 0px;
-    background-color: #3f87a6;
+    background-color: #ffffff;
 }
+/* body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #3f87a6;
+} */
 
 header{
+    position: relative;
+    background:#79b2f3;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100; 
+    padding-bottom: 8.5%;
+    border-bottom: 1px solid rgb(73, 72, 0);
+
+}
+
+/* header{
     position: relative;
     background: linear-gradient(#f3b879, #3f87a6);
     font-family: 'Montserrat', sans-serif;
     font-weight: 100; 
     padding-bottom: 50px;
 
-}
+} */
 /* header{
     position: relative;
     background: linear-gradient(#f69d3c, #3f87a6);
@@ -24,36 +39,72 @@ h1{
     justify-content: flex-start;
     display: inline-block;
     margin-left: 10px;
-    font-family: 'Poiret One', cursive;
+    
     font-weight: 400;
 }
 nav{
     display: flex;
     justify-content: flex-end;
     display: inline-block;
-    padding-left: 65%;
+    padding-left: 35%;
 }
 ul{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     list-style-type: none;
-    text-decoration: none;
+    text-decoration: none; 
 }
-li{
+
+li {
     padding: 5px;
 }
+li:hover{
+    opacity: 5;
+    border: 1px solid white;
+    transition: border 1s;
+}
+
 a{
     text-decoration: none;
 }
-/* img{
+
+img{
     position: relative;
     max-width: 50%;
     height: auto;
-    border: 1px solid white;
-    box-shadow: 0 0 25px rgba(0, 0, 0, 75%);
+    margin-top: 2%;
+    margin-right: 50px;
+    border: 50px solid rgb(255, 255, 255, 100%);
+    box-shadow: 0 0 0 5px rgba(0, 0, 0, 75%);
 }
+img:hover{
+    transition: opacity 500ms ease-in-out; 
+    transition: border 2s ease-in-out;
+    border: 0px solid rgb(255, 255, 255);
+    
+}
+/* header id selectors */
+#header-photo{
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
+/* main section ID selectors */
 #about-me{
     display: flex;
-    justify-content: center;
-} */
+    justify-content: flex-end;
+    padding-bottom: 50px;
+    background-color: salmon;
+
+}
+#about-me:hover {
+    transition: background 2s ease-in-out;
+    /* background-color: salmon; */
+}
+#my-work{
+
+}
+#contact-info{
+
+}
