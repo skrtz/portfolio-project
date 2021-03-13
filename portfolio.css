@@ -1,110 +1,155 @@
 body{
+    height: 100%;
+    width: 100%;
     margin: 0px;
     padding: 0px;
-    background-color: #ffffff;
+    font-family: 'Prata', serif;
 }
-/* body{
-    margin: 0px;
-    padding: 0px;
-    background-color: #3f87a6;
-} */
+/* 
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Prata', serif;
+font-family: 'Roboto', sans-serif; */
 
+/* header section starts here */
 header{
-    position: relative;
-    background:#79b2f3;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 100; 
-    padding-bottom: 8.5%;
-    border-bottom: 1px solid rgb(73, 72, 0);
-
-}
-
-/* header{
-    position: relative;
-    background: linear-gradient(#f3b879, #3f87a6);
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 100; 
-    padding-bottom: 50px;
-
-} */
-/* header{
-    position: relative;
-    background: linear-gradient(#f69d3c, #3f87a6);
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 100; 
-
-} */
-h1{
     display: flex;
-    justify-content: flex-start;
-    display: inline-block;
-    margin-left: 10px;
-    
-    font-weight: 400;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    color: rgba(0, 0, 0, 0.753);
+    background-image: url("./assets/oceanbackground.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Prata', serif;
+}
+h1{
+    padding-bottom: 35px;
+    border-bottom: 1px solid black;
+}
+h1 {
+    /* font-family: 'Montserrat', sans-serif; */
+    /* font-family: 'Open Sans', sans-serif; */
+    /* font-family: 'Oswald', sans-serif; */
+    font-family: 'Playfair Display', serif;
+}
+h2{
+    /* font-family: 'Montserrat', sans-serif; */
+    /* font-family: 'Open Sans', sans-serif; */
+    /* font-family: 'Oswald', sans-serif; */
+    font-family: 'Playfair Display', serif;
 }
 nav{
-    display: flex;
-    justify-content: flex-end;
-    display: inline-block;
-    padding-left: 35%;
+    position: fixed;
+    display: inline;
+    width: 100vw;
+    text-align: center;
+    align-self: flex-start;
+    background: rgba(0, 0, 0, 0.644);
+    z-index: 2;
+
+
+}
+nav li{
+    position: relative;
+    display: inline;
 }
 ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
     list-style-type: none;
     text-decoration: none; 
 }
-
 li {
-    padding: 5px;
+    margin-left: 150px;
+    margin-right: 150px;
+    padding: 10px;
+
 }
 li:hover{
     opacity: 5;
     border: 1px solid white;
-    transition: border 1s;
+    transition: border 5s;
 }
 
-a{
+nav a{
     text-decoration: none;
+    /* color: darkseagreen; */
+    color:rgb(255, 250, 240);
 }
 
+/* about me section startes here */
 img{
     position: relative;
     max-width: 50%;
     height: auto;
     margin-top: 2%;
     margin-right: 50px;
-    border: 50px solid rgb(255, 255, 255, 100%);
+    /* border: 50px solid rgb(255, 255, 255, 100%); */
     box-shadow: 0 0 0 5px rgba(0, 0, 0, 75%);
 }
 img:hover{
-    transition: opacity 500ms ease-in-out; 
-    transition: border 2s ease-in-out;
+    /* transition: opacity 1000ms ease-in-out;  */
+    transition: border 2s ease;
     border: 0px solid rgb(255, 255, 255);
     
 }
-/* header id selectors */
-#header-photo{
-    margin-top: 40px;
-    margin-left: 20px;
-}
 
-/* main section ID selectors */
+/* ID selectors */
 #about-me{
+    height: 100%;
+    width: 100%;
     display: flex;
     justify-content: flex-end;
     padding-bottom: 50px;
-    background-color: salmon;
-
+    background-color: rgb(244, 164, 96, 75%);
 }
 #about-me:hover {
     transition: background 2s ease-in-out;
-    /* background-color: salmon; */
+}
+#bio{
+    position: relative;
+    height: auto;
+    width: 500px;
+    border: 1px solid black;
+    text-align: center;
+    margin: auto;
+    opacity: 75%;
+    padding: 10px;
+}
+#bio h2{
+    display: inline;
+    border-bottom: 1px solid black;
+    width: 90px;
 }
 #my-work{
-
+    height: 100vh;
+    width: 100vw;
+    background:rgb(179, 246, 255);
+    display: flex;
+    justify-content: flex-end;
 }
 #contact-info{
-
+    height: 100vh;
+    width: 100vw;
+    background: rosybrown;
+}
+.box-title{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 250px;
+    width: 375px;
+    box-shadow: 0 0 0 1px rgb(244, 164, 96, 75%);
+}
+.my-work-subtitle{
+    position: absolute;
+    display: inline-block;
+    float: right;
+    border: 1px solid black;
 }
