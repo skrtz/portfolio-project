@@ -29,6 +29,7 @@ nav{
     width: 100vw;
     text-align: center;
     align-self: flex-start;
+    padding-top: 1%;
     background: rgba(0, 0, 0, 0.644);
     z-index: 2;
 }
@@ -65,69 +66,74 @@ nav a{
     width: 375px;
     box-shadow: 0 0 0 1px rgb(244, 164, 96, 75%);
 }
+main{
+    /* display: none; */
+}
 
 /* SECTION 2: ABOUT ME */
-#photo-of-me{
-    position: relative;
-    max-width: 50%;
-    height: auto;
-    margin-top: 2%;
-    margin-right: 50px;
-    box-shadow: 0 0 0 5px rgba(0, 0, 0, 75%);
-}
-#photo-of-me:hover{
-    transition: border 2s ease;
-    border: 0px solid rgb(255, 255, 255);   
-}
 #about-me{
-    height: 100%;
-    width: 100%;
+    width: 100vw;
+    height: 100vh;
     display: flex;
     justify-content: flex-start;
-    padding-bottom: 50px;
     background-color: rgb(244, 164, 96, 75%);
+    display: none;
 }
-
 #bio{
     position: relative;
-    height: auto;
+    /* border: 1px solid black; */
+    height: 45%;
     width: 500px;
-    border: 1px solid black;
-    text-align: center;
-    margin: auto;
+    margin: 1%;
+    margin-top: 30%;
+    /* text-align: center; */
+    /* margin: auto; */
     opacity: 75%;
-    padding: 10px;
+    /* padding: 10px; */
 }
 #bio h2{
     display: inline;
     border-bottom: 1px solid black;
     width: 90px;
+
+}
+#bio p{
+    display: block;
+    margin-top: 2%;
+    color: black;
+}
+#photo-of-me{
+    position: absolute;
+    max-width: 50%;
+    height: 50%;
+    margin-top: 2%;
+    margin-left: 2%;
+    box-shadow: 0 0 0 5px rgba(0, 0, 0, 80%);
+}
+#photo-of-me:hover{
+    transition: border 2s ease;
+    border: 0px solid rgb(255, 255, 255);   
 }
 
 
 /* section 3: MY WORK */
-
 #my-work{
+    display: none;
     height: 100vh;
     width: 100vw;
     background:rgb(179, 246, 255);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 #subtitle-3{
     margin: 0px;
     padding: 2%;
-    text-align: center;
-    border-bottom: 1px solid black;
     padding-bottom: 0px;
     width: 8%;
+    line-height: 1.5;
 }
 #photos-container img{
     box-shadow: 0 0 0 5px rgba(0, 0, 0, 75%);
     margin: auto;
 }
-
 #photos-container img:hover{
     opacity: 20%;
     transition: opacity 2s;
@@ -136,35 +142,12 @@ nav a{
     margin: auto;
     height: 80%;
     width: 90%;
-    border: 1px solid black;
     flex-wrap: wrap;    
     justify-content: space-evenly; 
-}
-#photo-1{
-    height: auto;
-    width: 50%;
-    margin: 0px;
-    padding: 0px;
-}
-#photo-2{
-    height: auto;
-    width: 14.75%;
-    /* order: -1; */
-}
-#photo-3{
-    height: auto;
-    width: 14.5%;
-    order: -1;
-}
-#photo-4{
-    height: auto;
-    width: 22.5%;
-    order: -1;
 }
 
 
 /* SECTION 4: CONTACT INFO */
-
 #contact-info{
     height: 100vh;
     width: 100vw;
@@ -172,6 +155,8 @@ nav a{
     flex-direction: column;
     align-items: center; 
     background-color: rosybrown;
+    display: none;
+
 }
 #subtitle-4{
     border-bottom: 1px solid black;
@@ -185,6 +170,8 @@ nav a{
     margin: auto;
 } 
 
+
+/* RESPONSIVE CSS */
 @media (max-width: 576px){
     #photo-of-me {
         height: auto;
