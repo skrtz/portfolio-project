@@ -31,8 +31,6 @@ nav{
     align-self: flex-start;
     background: rgba(0, 0, 0, 0.644);
     z-index: 2;
-
-
 }
 nav li{
     position: relative;
@@ -46,7 +44,6 @@ li {
     margin-left: 150px;
     margin-right: 150px;
     padding: 10px;
-
 }
 li:hover{
     opacity: 5;
@@ -55,7 +52,6 @@ li:hover{
 }
 nav a{
     text-decoration: none;
-    /* color: darkseagreen; */
     color:rgb(255, 250, 240);
 }
 .box-title{
@@ -81,14 +77,13 @@ nav a{
 }
 #photo-of-me:hover{
     transition: border 2s ease;
-    border: 0px solid rgb(255, 255, 255);
-    
+    border: 0px solid rgb(255, 255, 255);   
 }
 #about-me{
     height: 100%;
     width: 100%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     padding-bottom: 50px;
     background-color: rgb(244, 164, 96, 75%);
 }
@@ -121,7 +116,6 @@ nav a{
     align-items: center;
 }
 #subtitle-3{
-
     margin: 0px;
     padding: 2%;
     text-align: center;
@@ -143,11 +137,7 @@ nav a{
     height: 80%;
     width: 90%;
     border: 1px solid black;
-    display: flex;
-    flex-direction: column;
     flex-wrap: wrap;    
-    /* justify-content: center;
-    align-content: center; */
     justify-content: space-evenly; 
 }
 #photo-1{
@@ -208,5 +198,6 @@ nav a{
     #about-me {
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
 }
