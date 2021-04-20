@@ -14,7 +14,7 @@ header{
     height: 100vh;
     width: 100vw;
     color: rgba(0, 0, 0, 0.753);
-    background-image: url("./assets/content/oceanbackground.jpg");
+    background-image: url("./content/oceanbackground.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Prata', serif;
