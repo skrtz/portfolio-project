@@ -10,7 +10,7 @@ var contactPage = document.getElementById('contact-info');
 
     bioLink.addEventListener('click', function(){
         bioPage.style.display = 'flex';
-        homePage.style.display = 'none';
+        // homePage.style.display = 'none';
         workPage.style.display = 'none';
         contactPage.style.display = 'none';
     });
@@ -26,3 +26,10 @@ var contactPage = document.getElementById('contact-info');
         workPage.style.display = 'none';
         bioPage.style.display = 'none';
     });
+
+
+    var box = document.getElementById('box');
+    box.addEventListener('click', function(){
+        box.style.transform = 'rotateX(180deg) translate(9px, 6px)';
+    })
+    
