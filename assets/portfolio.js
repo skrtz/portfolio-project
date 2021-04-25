@@ -46,10 +46,10 @@ var contactPage = document.getElementById('contact-info');
     // });
 
 
-    var box = document.getElementById('box');
-    box.addEventListener('click', function(){
-        box.style.transform = 'rotateX(180deg) translate(9px, 6px)';
+    // var box = document.getElementById('box');
+    // box.addEventListener('click', function(){
+    //     box.style.transform = 'rotateX(180deg) translate(9px, 6px)';
 
-    })
+    // })
 
 
