@@ -13,7 +13,12 @@
         document.getElementById('view-app-2').style.opacity = '80%';
     })
 
-
+    document.getElementById('app-3').addEventListener('click', function(){
+        document.getElementById('pic-3').style.transition = 'opacity 1s ease-in-out';
+        document.getElementById('pic-3').style.opacity = '80%';
+        document.getElementById('view-app-3').style.transition = 'opacity 1s ease-in-out';
+        document.getElementById('view-app-3').style.opacity = '80%';
+    })
 
 
 var bioLink = document.getElementById('about-link');
